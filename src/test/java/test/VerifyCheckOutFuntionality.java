@@ -40,15 +40,18 @@ public class VerifyCheckOutFuntionality extends BaseTest {
 		
 		SwagLabsHomePage swagLabsHomePage= new SwagLabsHomePage(driver);
 		swagLabsHomePage.clickOnAddToCart();
+		swagLabsHomePage.ClickOnCartButton();
 		
 		CartPageSwagLabs cartPageSwagLabs= new CartPageSwagLabs(driver) ;
-		cartPageSwagLabs.getCartItems();
-	
+		//cartPageSwagLabs.getCartItems();
+        cartPageSwagLabs.waitForCartToDisplay(driver);
+		cartPageSwagLabs.clickOnCheckout();
 		checkoutPage CheckoutPage  =new checkoutPage (driver);
 		CheckoutPage.enterFirstNameInNameField();
 		CheckoutPage.enterLastNameInLastNameField();
 		CheckoutPage.enterZipCode();
-		CheckoutPage.clickOnContinueButton();
+		CheckoutPage.cliclOnContinueButton();
+		CheckoutPage.clickOnFinishButton();
 	}
 
 	

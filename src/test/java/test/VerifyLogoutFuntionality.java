@@ -27,7 +27,7 @@ public class VerifyLogoutFuntionality extends BaseTest{
 		driver=Browser.launchBrowser();	
 	}
 	@Test
-	public void CustomerIsAbleToLogout() {
+	public void CustomerIsAbleToLogout() throws InterruptedException {
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.enterUserNameField();
 		loginPage.enterPasswordInPasswordField();
@@ -35,8 +35,10 @@ public class VerifyLogoutFuntionality extends BaseTest{
 		
 		SwagLabsHomePage swagLabsHomePage= new SwagLabsHomePage(driver);
 		swagLabsHomePage.clickOnMenuButton();
+		//Thread.sleep(2000);
+		swagLabsHomePage.waitForCartToDisplay(driver);
 		swagLabsHomePage.clickOnlogout();
 		//switchToWindow(swagLabsHomePage.clickOnLogOutButton(driver));
-		swagLabsHomePage.waitForCartToDisplay(driver);
+		
 }
 }

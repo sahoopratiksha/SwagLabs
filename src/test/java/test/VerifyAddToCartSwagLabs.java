@@ -46,7 +46,7 @@ public class VerifyAddToCartSwagLabs extends BaseTest {
 		swagLabsHomePage.clickOnAddToCart();
 		
 		CartPageSwagLabs cartPageSwagLabs= new CartPageSwagLabs(driver) ;
-		switchToChildWindow(swagLabsHomePage.getProductName(0));
+		//switchToChildWindow(swagLabsHomePage.getProductName(0));
 		cartPageSwagLabs.getCartItems();
 	}
 	@Test

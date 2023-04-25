@@ -18,6 +18,7 @@ public class SwagLabsHomePage {
     @FindBy(xpath="(//button[text()='Add to cart'])[1]")private WebElement AaddToCart;
     @FindBy(xpath="//button[@id='react-burger-menu-btn']")private WebElement menuButton;
     @FindBy(xpath="//a[text()='Logout']")private WebElement logoutButton;
+    @FindBy(xpath="//a[@class='shopping_cart_link']")private WebElement cartButton;
     
     public SwagLabsHomePage (WebDriver driver) {
     	PageFactory.initElements(driver, this);
@@ -30,6 +31,9 @@ public class SwagLabsHomePage {
     }
     public void clickOnlogout() {
     	logoutButton.click();
+    }
+    public void ClickOnCartButton() {
+    	cartButton.click();
     }
     public void waitForCartToDisplay(WebDriver driver) {
 		WebDriverWait wait =new WebDriverWait(driver,Duration.ofMillis(3000));

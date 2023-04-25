@@ -9,7 +9,7 @@ public static ExtentReports createReports() {
 		ExtentReports reports= new ExtentReports ();
 		ExtentSparkReporter htmlReports = new ExtentSparkReporter ("Swaglabs.html");
 		reports.attachReporter(htmlReports);
-		reports.setSystemInfo("Application", "Swaglabs98");
+		reports.setSystemInfo("Application", "Swaglabs");
 		reports.setSystemInfo("TestType", "Regression");
 		reports.setSystemInfo("Created by", "pratiksha");
 		

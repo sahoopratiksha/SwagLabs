@@ -12,7 +12,7 @@ public class checkoutPage {
 	@FindBy(xpath="//input[@id='postal-code']")private WebElement zipCode;
 	@FindBy(xpath="//input[@id='continue']")private WebElement continueButton;
 	@FindBy(xpath="//button[@id='cancel']")private WebElement cancel;
-	
+	@FindBy(xpath="//button[@id='finish']")private WebElement finish;
 
 	public checkoutPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -29,7 +29,10 @@ public class checkoutPage {
 	public void cliclOnContinueButton() {
 		continueButton.click();
 	}
-	public void clickOnContinueButton() {
+	public void clickOnCancelButton() {
 		cancel.click();
+	}
+	public void clickOnFinishButton() {
+		finish.click();
 	}
 }

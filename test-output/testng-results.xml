@@ -1,241 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-25T10:46:48 IST" name="Suite" finished-at="2023-04-25T10:46:57 IST" duration-ms="8871">
+  <suite started-at="2023-04-25T11:54:39 IST" name="Default suite" finished-at="2023-04-25T11:54:45 IST" duration-ms="6091">
     <groups>
     </groups>
-    <test started-at="2023-04-25T10:46:48 IST" name="ChromeTest" finished-at="2023-04-25T10:46:57 IST" duration-ms="8871">
-      <class name="test.VerifyLogoutFuntionality">
-        <test-method is-config="true" signature="configureReports()[pri:0, instance:test.VerifyLogoutFuntionality@117159c0]" started-at="2023-04-25T10:46:48 IST" name="configureReports" finished-at="2023-04-25T10:46:48 IST" duration-ms="0" status="PASS">
+    <test started-at="2023-04-25T11:54:39 IST" name="Default test" finished-at="2023-04-25T11:54:45 IST" duration-ms="6091">
+      <class name="test.VerifyCheckOutFuntionality">
+        <test-method is-config="true" signature="configureReports()[pri:0, instance:test.VerifyCheckOutFuntionality@7674f035]" started-at="2023-04-25T11:54:39 IST" name="configureReports" finished-at="2023-04-25T11:54:39 IST" duration-ms="344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureReports -->
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:test.VerifyLogoutFuntionality@117159c0]" started-at="2023-04-25T10:46:52 IST" name="OpenBrowser" finished-at="2023-04-25T10:46:54 IST" duration-ms="1793" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:test.VerifyCheckOutFuntionality@7674f035]" started-at="2023-04-25T11:54:39 IST" name="OpenBrowser" finished-at="2023-04-25T11:54:44 IST" duration-ms="4382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="CustomerIsAbleToLogout()[pri:0, instance:test.VerifyLogoutFuntionality@117159c0]" started-at="2023-04-25T10:46:54 IST" name="CustomerIsAbleToLogout" finished-at="2023-04-25T10:46:54 IST" duration-ms="531" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=112.0.5615.138)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f178aa050fec4f88cd38733cfc8a108, clickElement {id=ce7a1d00-328f-447f-9801-ed8b8cb80012}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\SURYAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53824/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8f178aa050fec4f88cd38733cfc8a108)] -> xpath: //a[text()='Logout']]
-Session ID: 8f178aa050fec4f88cd38733cfc8a108]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=112.0.5615.138)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f178aa050fec4f88cd38733cfc8a108, clickElement {id=ce7a1d00-328f-447f-9801-ed8b8cb80012}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\SURYAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53824/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8f178aa050fec4f88cd38733cfc8a108)] -> xpath: //a[text()='Logout']]
-Session ID: 8f178aa050fec4f88cd38733cfc8a108
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-at pom.SwagLabsHomePage.clickOnlogout(SwagLabsHomePage.java:32)
-at test.VerifyLogoutFuntionality.CustomerIsAbleToLogout(VerifyLogoutFuntionality.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        <test-method signature="VerifyCheckoutFuntionality()[pri:0, instance:test.VerifyCheckOutFuntionality@7674f035]" started-at="2023-04-25T11:54:44 IST" name="VerifyCheckoutFuntionality" finished-at="2023-04-25T11:54:45 IST" duration-ms="1317" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CustomerIsAbleToLogout -->
-      </class> <!-- test.VerifyLogoutFuntionality -->
-      <class name="test.VerifyTheLoginFuntionality">
-        <test-method is-config="true" signature="configureReports()[pri:0, instance:test.VerifyTheLoginFuntionality@3e27ba32]" started-at="2023-04-25T10:46:48 IST" name="configureReports" finished-at="2023-04-25T10:46:48 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configureReports -->
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:test.VerifyTheLoginFuntionality@3e27ba32]" started-at="2023-04-25T10:46:55 IST" name="OpenBrowser" finished-at="2023-04-25T10:46:56 IST" duration-ms="1552" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method signature="CustomerIsAbleToLogin()[pri:0, instance:test.VerifyTheLoginFuntionality@3e27ba32]" started-at="2023-04-25T10:46:56 IST" name="CustomerIsAbleToLogin" finished-at="2023-04-25T10:46:57 IST" duration-ms="377" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CustomerIsAbleToLogin -->
-      </class> <!-- test.VerifyTheLoginFuntionality -->
-      <class name="test.VerifyAddToCartSwagLabs">
-        <test-method is-config="true" signature="configureReports()[pri:0, instance:test.VerifyAddToCartSwagLabs@27406a17]" started-at="2023-04-25T10:46:48 IST" name="configureReports" finished-at="2023-04-25T10:46:48 IST" duration-ms="285" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configureReports -->
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:test.VerifyAddToCartSwagLabs@27406a17]" started-at="2023-04-25T10:46:48 IST" name="OpenBrowser" finished-at="2023-04-25T10:46:52 IST" duration-ms="3371" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method signature="VerifyRemoveFuntionality()[pri:0, instance:test.VerifyAddToCartSwagLabs@27406a17]" started-at="2023-04-25T10:46:52 IST" name="VerifyRemoveFuntionality" finished-at="2023-04-25T10:46:52 IST" duration-ms="576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyRemoveFuntionality -->
-        <test-method is-config="true" signature="captureResults(org.testng.ITestResult)[pri:0, instance:test.VerifyAddToCartSwagLabs@27406a17]" started-at="2023-04-25T10:46:52 IST" name="captureResults" finished-at="2023-04-25T10:46:52 IST" duration-ms="5" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyRemoveFuntionality status=SUCCESS method=VerifyAddToCartSwagLabs.VerifyRemoveFuntionality()[pri:0, instance:test.VerifyAddToCartSwagLabs@27406a17] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null
-at test.VerifyAddToCartSwagLabs.captureResults(VerifyAddToCartSwagLabs.java:71)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureResults -->
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:test.VerifyAddToCartSwagLabs@27406a17]" started-at="2023-04-25T10:46:52 IST" name="OpenBrowser" finished-at="2023-04-25T10:46:52 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method signature="addProductToCart()[pri:0, instance:test.VerifyAddToCartSwagLabs@27406a17]" started-at="2023-04-25T10:46:52 IST" name="addProductToCart" finished-at="2023-04-25T10:46:52 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null
-at test.VerifyAddToCartSwagLabs.captureResults(VerifyAddToCartSwagLabs.java:71)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="captureResults(org.testng.ITestResult)[pri:0, instance:test.VerifyAddToCartSwagLabs@27406a17]" started-at="2023-04-25T10:46:52 IST" name="captureResults" finished-at="2023-04-25T10:46:52 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureResults -->
-        <test-method is-config="true" signature="publishReports()[pri:0, instance:test.VerifyAddToCartSwagLabs@27406a17]" started-at="2023-04-25T10:46:57 IST" name="publishReports" finished-at="2023-04-25T10:46:57 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- publishReports -->
-      </class> <!-- test.VerifyAddToCartSwagLabs -->
-    </test> <!-- ChromeTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- VerifyCheckoutFuntionality -->
+      </class> <!-- test.VerifyCheckOutFuntionality -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
