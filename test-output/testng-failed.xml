@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="Browser" value=""/>
+    <classes>
+      <class name="test.VerifyLogoutFuntionality">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="CustomerIsAbleToLogout"/>
+          <include name="configureReports"/>
+        </methods>
+      </class> <!-- test.VerifyLogoutFuntionality -->
+      <class name="test.VerifyAddToCartSwagLabs">
+        <methods>
+          <include name="captureResults"/>
+          <include name="configureReports"/>
+          <include name="addProductToCart"/>
+          <include name="OpenBrowser"/>
+          <include name="publishReports"/>
+        </methods>
+      </class> <!-- test.VerifyAddToCartSwagLabs -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
